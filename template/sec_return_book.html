@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return book</title>
+    <style>
+        .a{
+            width:400px;
+            height: 400px;
+            background-color: rgb(44, 162, 209);
+            color: whitesmoke;
+            margin-left: 400px;
+            margin-top: 250px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            font-style: oblique;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .a1{
+            font-size: 20px;
+        }
+        .a2{
+            color: rgb(44, 162, 209);
+            height: 20px;
+            font-style: oblique;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            border-color: cyan;
+            border-style: ridge;
+            background-color: whitesmoke;
+        }
+        .a3{
+            color: rgb(44,162,209);
+            height: 30px;
+            width: 80px;
+            font-style: oblique;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            border-color: cyan;
+            border-style: ridge;
+            background-color: whitesmoke;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <center>
+        <h1><u>Return a book</u></h1>
+        <form action="/sec_app2/student6" method="post">
+            {% csrf_token %}
+            
+            <label class="a1">Enter book name :-</label>
+            <input type="text"  class="a2" name="book_name" required>
+            <br>
+            <br>
+            <label class='a1'>Enter author name :-</label>
+            <input type="text" class="a2" name="author_name" required>
+            <br>
+            <br>
+            <label class="a1">Enter book category :-</label>
+            <input type="text" class="a2" name="book_category" required>
+            <br>
+            <br>
+            <label class='a1'>Enter book id :-</label>
+            <input type="number" class="a2" name="book_id" required>
+            <br>
+            <br>
+            <label class="a1">Enter student name :-</label>
+            <input type="text" class="a2" name="student_name" required>
+            <br>
+            <br>
+            <label class="a1">Enter student id :-</label>
+            <input type="number" class="a2" name="student_id" required>
+            <br>
+            <br>
+            <button  class="a3" onclick="return alert('Book sucessfully return!!')">Submit</button>
+            <br>
+            {{msg}}
+        </center>
+        </form>
+    </div>
+</body>
+</html>

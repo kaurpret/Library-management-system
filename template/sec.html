@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="icon" href="/static/image/stu.jpg">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+    
+    <style>
+        .a>img{
+            margin-top: 10px;
+            width: 150px;
+            border-radius: 50px;
+            margin-left: 120px;
+            border-style:groove;
+            border-color: turquoise;
+        }
+      
+     
+        
+        .a{
+            margin-top: 50px;
+            width:400px;
+            height:auto;
+            border-color: black;
+            background-color: rgb(93,117,190,0.418);
+            border-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            margin-left: 400px;
+            color: #4169e1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .b{
+            font-size: 20px;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .b>button{
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            color: #4169e1;
+            border-color: royalblue;
+          }
+        .c{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 25px;
+            width:180px;
+            color: #4169e1;
+            font-weight:15px;
+            font-size: 15px;
+            background-color: whitesmoke;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+   
+   
+    <div class="a">
+        <img src="/static/image/stu.jpg">
+    <center><u><h1>Welcome student</h1></u>
+    <form action="student" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label class="b">Username :-</label>
+        <input type="text" name="user_name" class="c">
+        <br>
+        <br>
+        <label class="b">First name :-</label>
+        <input type="text" name="first_name" class="c">
+        <br>
+        <br>
+        <label class="b">Last name :-</label>
+        <input type="text" name="last_name" class="c">
+        <br>
+        <br>
+        <label class="b">Class name :-</label>
+        <input type="text" name="class_name" class="c">
+        <br>
+        <br>
+        <label class="b">Roll no :-</label>
+        <input type="number" name="roll_no" class="c">
+        <br>
+        <br> 
+        <label class="b">Phone:-</label>
+        <input type="number" name="phone" class="c">
+        <br>
+        <br>
+        <label class="b">Image :-</label>
+        <input type="file" name="image" class="c">
+        <br>
+        <br>
+        <label class="b">Email :-</label>
+        <input type="email" name="email" class="c">
+        <br>
+        <br>
+        <label class="b">Password :-</label>
+        <input type="password" name="pasw" class="c">
+        <br>
+        <br>
+        <label class="b">Confirm Password:-</label>
+        <input type="password" name="con_pass" class="c">
+        <br>
+        <br>
+        <center class="b"><button >signup</button></center>
+    </form>
+    </center>
+    </div>
+</body>
+</html>

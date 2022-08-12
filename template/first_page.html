@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelCome Admin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"  crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="/static/image/admin.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- {% load static %} -->
+    <link rel="stylesheet" href="/static/css/1.css">
+    <style>
+        body{
+            
+            background-color: rgb(222, 228, 228);
+        }
+        .a{
+            display: inline-block;
+            background-color: deepskyblue;
+            width: 200px;
+            height: 250px;
+            border-radius: 20px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .a>img {
+            height: 150px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            rotate: 20deg;
+            border:3px;  
+            border-style: groove;
+            border-color: dodgerblue;
+            border-radius: 30px;
+        }
+        .a>a>.a1{
+            margin-left: 40px;
+            height:30px;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-color: dodgerblue;
+            background-color: snow;
+            color: deepskyblue;
+            font-style: italic;
+            font-size: 15px;
+            font-family:'Times New Roman', Times, serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md " style="margin-left: 30px; color:snow; background-color:deepskyblue; margin-top:10px; border-radius:20px; margin-right:100px; ">
+        <a class="navbar-brand" href="#">
+            <img src="/static/image/admin.jpg" style="width:50px; border-radius:10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" style="color:snow; font-weight:bold; font-family:'Times New Roman', Times, serif; font-style:italic; font-size:20px;" href="/">Home</a>
+            </li> <li class="nav-item">
+              <a class="nav-link" style="color:snow; font-weight:bold; font-family:'Times New Roman', Times, serif; font-style:italic; font-size:20px;" href="logout">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:snow; font-weight:bold; font-family:'Times New Roman', Times, serif; font-style:italic; font-size:20px;" href="check_pass">Change password</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:snow; font-weight:bold; font-family:'Times New Roman', Times, serif; font-style:italic; font-size:20px;" href="/sec_app1/profile">view profile</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+    <div class="a">
+   <img src="/static/image/b5.jpg">
+   <br>
+   <a href="/sec_app1/first2"><button class="a1">Add books</button></a>
+   <br>
+   <br>
+    </div>
+    <div class="a">
+        <img src="/static/image/bb3.jpg">
+        <a href="/sec_app1/first3"><button class="a1">All books</button></a>
+        <br>
+        <br>
+         </div>
+    <div class="a">
+   <img src="/static/image/bb2.png">
+   <br>
+   <a href="/sec_app1/first4"><button class="a1">Delete a book</button></a>
+    <br>
+    <br>
+    </div>
+    <div class="a">
+   <img src="/static/image/bb4.jpg">
+   <br>
+   <a href="/sec_app1/issue"><button class="a1">Issue a book</button></a>
+   <br>
+   <br>
+    </div>
+    <div class="a">
+   <img src="/static/image/bb1.jpg">
+   <br>
+   <a href="/sec_app1/first6"><button class="a1">View issue books</button></a>
+   <br>
+   <br>
+    </div>
+    <div class="a">
+   <img src="/static/image/39.jpg">
+   <br>
+   <a href="/sec_app1/first7"><button class="a1">Return books</button></a>
+   <br>
+   <br>
+    </div>
+    <div class="a">
+   <img src="/static/image/34.jpg">
+   <br>
+   <a href="/sec_app1/first8"><button class="a1">Edit books</button></a>
+   <br>
+   <br>
+    </div>  
+    <div class="a">
+   <img src="/static/image/ss1.jpg">
+   <br>
+   <a href="/sec_app2/student"><button class="a1">Add a student</button></a>
+   <br>
+   <br>
+    </div> 
+    <div class="a">
+   <img src="/static/image/ss4.jpg">
+   <br>
+   <a href="/sec_app2/student2"><button class="a1">All students</button></a>
+   <br>
+   <br>
+    </div> 
+    <div class="a">
+   <img src="/static/image/ss3.jpg">
+   <br>
+   <a href="/sec_app2/student3"><button class="a1">Delete & Edit student</button></a>
+   <br>
+   <br>
+    </div>
+</body>
+</html>

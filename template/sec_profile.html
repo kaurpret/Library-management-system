@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            background-color: deepskyblue;
+        }
+        .a{
+            width: 900px;
+            height:500px;
+            background-color: darkblue;
+            color: whitesmoke;
+            margin-left: 200px;
+            margin-top: 180px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            padding-top: 10px;
+            border-radius: 30px;
+         }
+         img
+       {
+          float: right;
+          margin-left: 10px;
+          margin-right: 100px;
+       }
+
+       big{
+           font-size: 40px;
+           padding-top: 50px;
+       }
+       .a1{
+           font-size: 40px;
+       }
+       .l{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: 30px;
+       }
+       .a2{
+           height: 30px;
+           border-radius: 20px;
+           color: darkblue;
+           font-weight: bold;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-style: oblique;
+           font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <form action="view_profile" method="post"  enctype="multipart/form-data">
+        {% csrf_token %}
+<div class="a">
+    <center>
+    <h2 class="a1"><u>Profile</u></h2>
+    <big><u>Welcome {{user_name}}</u></big>
+    <img src="/media/{{image}}" width="150px" height="100px"/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label class="l">First name:</label><input type="text" class="a2" name="first_name" readonly value={{first_name}} >
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <label class="l">Last name:</label><input type="text" class="a2" name="last_name" readonly value={{last_name}} >
+    <br>
+    <br>
+    <label class="l">Class name:</label><input type="text" class="a2" name="class_name" readonly value={{class_name}} >
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <label class="l">Roll no:</label><input type="number" class="a2" name="roll_no" readonly value={{roll_no}} >
+    <br>
+    <br>
+    <label class="l">Phone:</label><input type="number" class="a2" name="phone" readonly value={{phone}} >
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <label class="l">Email:</label><input type="email" class="a2" name="email" readonly value={{email}} >
+    </center>
+</div>
+
+    </form>
+</body>
+</html>
